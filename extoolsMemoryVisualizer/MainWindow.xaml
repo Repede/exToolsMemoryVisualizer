@@ -12,9 +12,12 @@
                 <MenuItem Header="_File">
                     <MenuItem Header="_Open..." Click="OnOpenClicked" />
                     <MenuItem Header="_Exit" Click="OnExitClicked"/>
-                </MenuItem>
-            </Menu>
-            <DataGrid/>
+				</MenuItem>
+				<MenuItem Header="_Data">
+					<MenuItem Header="Set Sensitivity..." Click="OnSetSensitivityClicked" />
+				</MenuItem>
+			</Menu>
+            <DataGrid x:Name="MemDataGrid"/>
         </DockPanel>
     </Grid>
 </Window>
