@@ -3,6 +3,7 @@ A simple app to read and display json files into a table, used to compare memory
 
 Currently a WIP
 - Can read multiple jsons and parse into data
+- Displays the data on a table and shows total memory usage for each element
 
 TODO
-- Actually display the data on a table, add a color-compare feature and a sensitivity value
+- Add a color-compare feature and a sensitivity value
