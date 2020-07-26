@@ -31,6 +31,34 @@ namespace extoolsMemoryVisualizer
 						highestCount = m_EntryToTotal[key].Count;
 					}
 				}
+
+				foreach (string key in dump.Mobs.Entries.Keys)
+				{
+					if (!m_EntryToTotal.ContainsKey(key))
+					{
+						m_EntryToTotal.Add(key, new List<int>());
+					}
+
+					m_EntryToTotal[key].Add(dump.Mobs.Entries[key].Total);
+					if (m_EntryToTotal[key].Count > highestCount)
+					{
+						highestCount = m_EntryToTotal[key].Count;
+					}
+				}
+
+				foreach (string key in dump.Obj.Entries.Keys)
+				{
+					if (!m_EntryToTotal.ContainsKey(key))
+					{
+						m_EntryToTotal.Add(key, new List<int>());
+					}
+
+					m_EntryToTotal[key].Add(dump.Obj.Entries[key].Total);
+					if (m_EntryToTotal[key].Count > highestCount)
+					{
+						highestCount = m_EntryToTotal[key].Count;
+					}
+				}
 			}
 
 			return m_EntryToTotal;
