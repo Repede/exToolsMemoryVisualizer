@@ -95,13 +95,6 @@ namespace extoolsMemoryVisualizer
 			{
 				int sensitivity = dialog.Sensitivity;
 			}
-
-			//Set grid colors from sensitivity here
-			for(int i = 0; i < MemDataGrid.Items.Count; ++i)
-			{
-				DataGridRow row = (DataGridRow)MemDataGrid.ItemContainerGenerator.ContainerFromIndex(i);
-				row.GetIndex();
-			}
 		}
 
 		private void OnExitClicked(object sender, RoutedEventArgs e)
