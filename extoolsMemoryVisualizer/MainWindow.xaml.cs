@@ -99,6 +99,10 @@ namespace extoolsMemoryVisualizer
 
 		private void OnExitClicked(object sender, RoutedEventArgs e)
 		{
+			MemDataGrid.Columns.Clear();
+			MemDataGrid.ItemsSource = null;
+			m_MemDumps.Clear();
+			m_OpenedFiles.Clear();
 			Application.Current.Shutdown();
 		}
 	}

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extoolsMemoryVisualizer", "extoolsMemoryVisualizer\extoolsMemoryVisualizer.csproj", "{9AE45835-13FA-427C-901C-D30AA5169D67}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installation", "Installation\Installation.vdproj", "{F0FFFCEE-A1D1-459B-9938-43B06B7F9D5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{9AE45835-13FA-427C-901C-D30AA5169D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AE45835-13FA-427C-901C-D30AA5169D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AE45835-13FA-427C-901C-D30AA5169D67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0FFFCEE-A1D1-459B-9938-43B06B7F9D5D}.Debug|Any CPU.ActiveCfg = Debug
+		{F0FFFCEE-A1D1-459B-9938-43B06B7F9D5D}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
